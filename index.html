@@ -4,49 +4,54 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
 
     background:linear-gradient(180deg,#0b0b0b,#101827,#0b0b0b);
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
+    color:#f2f2f2;
+    font-family:'Poppins',Arial,sans-serif;
+    line-height:1.8;
 
 }
 
 .hero{
 
     text-align:center;
-    padding:90px 20px;
-    background:linear-gradient(180deg,#111,#191f33);
+    padding:120px 20px;
+    background:linear-gradient(180deg,#0d0d0d,#16213b);
 
 }
 
 .hero h1{
 
-    font-size:60px;
+    font-size:64px;
     color:#00bfff;
+    font-weight:700;
 
 }
 
 .hero h2{
 
     margin-top:15px;
-    font-size:30px;
+    font-size:32px;
+    font-weight:500;
 
 }
 
 .hero h3{
 
+    margin-top:8px;
     color:#8dc6ff;
-    margin-top:10px;
+    font-weight:400;
 
 }
 
 .hero p{
 
     margin-top:20px;
-    color:#c7c7c7;
+    color:#cfcfcf;
 
 }
 
@@ -55,30 +60,39 @@ body{
     width:85%;
     max-width:1100px;
 
-    margin:40px auto;
+    margin:45px auto;
 
-    background:#1b1b1b;
+    background:#181818;
 
-    padding:35px;
+    padding:40px;
 
-    border-radius:15px;
+    border-radius:14px;
 
-    box-shadow:0 0 20px rgba(0,150,255,.15);
+    border:1px solid #2f2f2f;
+
+    box-shadow:0 0 25px rgba(0,150,255,.10);
 
 }
 
 .projeto h2{
 
     color:#00bfff;
-    margin-bottom:20px;
+    margin-bottom:25px;
+    font-size:32px;
+
+}
+
+.projeto p{
+
+    color:#d6d6d6;
 
 }
 
 .skills{
 
-    display:flex;
+    display:grid;
 
-    flex-wrap:wrap;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
     gap:20px;
 
@@ -86,13 +100,13 @@ body{
 
 .skill{
 
-    flex:1 1 250px;
+    background:#232323;
 
-    background:#262626;
-
-    padding:20px;
+    padding:25px;
 
     border-radius:12px;
+
+    border:1px solid #303030;
 
     transition:.3s;
 
@@ -100,9 +114,11 @@ body{
 
 .skill:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
-    box-shadow:0 0 20px #00bfff;
+    border-color:#00bfff;
+
+    box-shadow:0 0 20px rgba(0,191,255,.25);
 
 }
 
@@ -110,7 +126,7 @@ body{
 
     color:#00bfff;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 
 }
 
@@ -120,15 +136,23 @@ a{
 
     text-decoration:none;
 
+    transition:.3s;
+
 }
 
 a:hover{
 
-    color:white;
+    color:#ffffff;
 
 }
 
 </style>
+
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
 
 <body>
 
@@ -141,66 +165,66 @@ a:hover{
 <h3>Blueprint Gameplay Programmer</h3>
 
 <p>
-Estudante de Jogos Digitais • UNIFACISA
+Game Development Student • UNIFACISA
 </p>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
 </header>
 
 <section class="projeto">
 
-<h2>🎮 Sobre Mim</h2>
+<h2>About Me</h2>
 
 <p>
+
 Sou estudante de Jogos Digitais pela <strong>UNIFACISA</strong>, na Paraíba, e desenvolvedor de jogos com foco em <strong>Unreal Engine 5</strong> e <strong>Blueprints</strong>.
 
 Tenho experiência no desenvolvimento de sistemas de gameplay, inteligência artificial, combate, animações e interfaces, adquirida principalmente através de projetos pessoais.
 
-Meu objetivo é conquistar minha primeira oportunidade na indústria de jogos, colaborando com equipes de desenvolvimento e criando experiências imersivas para os jogadores.
+Busco minha primeira oportunidade na indústria de jogos para aplicar meus conhecimentos, crescer profissionalmente e contribuir para o desenvolvimento de experiências imersivas e de alta qualidade.
+
 </p>
 
 </section>
 
 <section class="projeto">
 
-<h2>🛠 Tecnologias</h2>
+<h2>Technologies</h2>
 
 <div class="skills">
 
 <div class="skill">
-<h3>🎮 Unreal Engine 5</h3>
-<p>Desenvolvimento de jogos 3D.</p>
+<h3>Unreal Engine 5</h3>
+<p>3D game development using Unreal Engine.</p>
 </div>
 
 <div class="skill">
-<h3>⚡ Blueprints</h3>
-<p>Programação visual e criação de sistemas.</p>
+<h3>Blueprints</h3>
+<p>Visual scripting and gameplay systems.</p>
 </div>
 
 <div class="skill">
-<h3>🤖 Gameplay</h3>
-<p>Mecânicas, combate e interação.</p>
+<h3>Gameplay Programming</h3>
+<p>Combat, interaction and core mechanics.</p>
 </div>
 
 <div class="skill">
-<h3>🧠 Inteligência Artificial</h3>
-<p>IA para inimigos e NPCs.</p>
+<h3>Artificial Intelligence</h3>
+<p>Enemy behavior and NPC logic.</p>
 </div>
 
 <div class="skill">
-<h3>🎬 Animation Systems</h3>
-<p>Animation Blueprints e State Machines.</p>
+<h3>Animation Systems</h3>
+<p>Animation Blueprints and State Machines.</p>
 </div>
 
 <div class="skill">
-<h3>🖥 UI Development</h3>
-<p>Interfaces utilizando UMG.</p>
+<h3>UI Development</h3>
+<p>Interfaces created with Unreal Motion Graphics.</p>
 </div>
 
 <div class="skill">
-<h3>📂 Git & GitHub</h3>
-<p>Controle de versão.</p>
+<h3>Git & GitHub</h3>
+<p>Version control and project management.</p>
 </div>
 
 </div>
@@ -209,30 +233,40 @@ Meu objetivo é conquistar minha primeira oportunidade na indústria de jogos, c
 
 <section class="projeto">
 
-<h2>🚀 Projetos</h2>
+<h2>Projects</h2>
 
 <p>
-Em breve esta seção contará com vídeos, imagens e demonstrações dos meus projetos desenvolvidos na Unreal Engine 5.
+
+This section will soon include gameplay videos, screenshots and technical breakdowns of my Unreal Engine 5 projects.
+
 </p>
 
 </section>
 
 <section class="projeto">
 
-<h2>📧 Contato</h2>
+<h2>Contact</h2>
 
 <p>
-<strong>GitHub:</strong><br>
+
+<strong>GitHub</strong><br>
+
 <a href="https://github.com/Rebquim" target="_blank">
 github.com/Rebquim
 </a>
+
 </p>
 
+<br>
+
 <p>
-<strong>Email:</strong><br>
+
+<strong>Email</strong><br>
+
 <a href="mailto:simonbrendo@hotmail.com">
 simonbrendo@hotmail.com
 </a>
+
 </p>
 
 </section>
